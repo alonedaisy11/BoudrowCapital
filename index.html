@@ -2,31 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Boudrow Capital</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      background: #000;
       height: 100%;
       width: 100%;
-      background: #000;
-      overflow: hidden;
     }
     iframe {
+      display: block;
       border: none;
       width: 100%;
-      height: 100%;
+      height: 100vh;
     }
-    @media (orientation: portrait) {
+    @supports (-webkit-touch-callout: none) {
       iframe {
-        height: 100vh;
-        width: 100vw;
+        height: -webkit-fill-available;
       }
     }
   </style>
 </head>
 <body>
-  <iframe src="Investment_Search_Mandate-onepager_(2).pdf"></iframe>
+  <iframe src="Investment_Search_Mandate-onepager_(2).pdf" allowfullscreen></iframe>
 </body>
 </html>
